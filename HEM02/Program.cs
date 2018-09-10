@@ -6,7 +6,7 @@ namespace HEM02
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Console.WriteLine("Hello Tesla");
         }
 
 
@@ -15,11 +15,10 @@ namespace HEM02
             public string Brand { get; }
             public string Model { get; }
 
-            public Engine engine { get; }
+            public Engine Engine { get; }
+            public Person Owner { get; }
 
-            public Person owner { get; }
-
-            public Car(string Brand, string model, Engine engine, Person owner)
+            public Car(string brand, string model, Engine engine, Person owner)
             {
                 Brand = brand;
                 Model = model;
@@ -32,11 +31,23 @@ namespace HEM02
         {
             public string FirstName;
             public string LastName;
-            public Person()
+            public Person(string firstName, string lastName)
+            {
+                this.FirstName = firstName;
+                this.LastName = lastName;
+            }
+        }
+
+        class Engine
+        {
+            public string Type { get; }
+            public int Output { get; }
+            public string SerialNumber { get; }
+
+            public Engine()
             {
 
             }
-
         }
     }
 }
