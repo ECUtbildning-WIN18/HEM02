@@ -9,5 +9,11 @@ namespace HEM02
         public string Type { get; }
         public int OutPut { get; }
         public string SerialNumber { get; }
+
+        //methods
+        public void Accelerate()
+        { }
+        public void LudicrousSpeed()
+        { }
     }
 }

@@ -9,14 +9,17 @@ namespace HEM02
         public string RegNumber { get; }
         public string Model { get; }
         public string Brand { get; }
-        public Car (string brand, string model)
+        
+        public Car (string regnumber, string brand, string model)
+
         {
             Brand = brand;
             Model = model;
+            RegNumber = regnumber;
         }
         
-        public Engine Engine { get; }
-        public Owner Owner { get; }
+        public Engine Engine { get; } //här är jag lite osäker på vad jag egentligen gör...
+        public Owner Owner { get; } //se ovan kommentar
 
         public Car (string Brand, string Model, Engine engine, Owner owner)
         {
@@ -28,11 +31,7 @@ namespace HEM02
 
         }
 
-            //methods for car
-        public void Accelerate()
-        {}
-        public void LudicrousSpeed()
-        { }
+        
 
     }
 }

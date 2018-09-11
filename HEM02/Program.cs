@@ -6,7 +6,8 @@ namespace HEM02
     {
         static void Main(string[] args)
         {
-            Car Model3 = new Car("Tesla", "Model3")
+            //skapar ny modell av Car med namn myCar
+            Car myCar = new Car("AAA 111","Tesla", "Model3");
             {
             
             }
