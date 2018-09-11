@@ -9,7 +9,7 @@ namespace HEM02
         public string Brand { get; }
         public string Model { get; }
         public int Speed { get; set; }
-
+        public bool SoundSystemOn { get; set; }
 
         public Engine Engine { get; }
         public Person Owner { get; }

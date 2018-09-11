@@ -10,8 +10,6 @@ namespace HEM02
             AudioSystem hifi = new AudioSystem("Hifi System");
             AudioSystem badSound = new AudioSystem("Bad SoundSystem");
             
-
-            
             Engine turbo = new Engine("Turbo", 350);
             Engine slow = new Engine("ScrapCar", 89);
 
@@ -20,7 +18,7 @@ namespace HEM02
 
             Car elonMusksPrecious = new Car(turbo, theOwner, hifi);
             Car slowTest = new Car(slow, theThief, badSound);
-            test123.DoSomething();
+            
             
             //Audio test
             hifi.TurnOnMusic();
@@ -34,8 +32,7 @@ namespace HEM02
             elonMusksPrecious.LudicrousSpeed();
             slowTest.LudicrousSpeed();
             
-            //Console test
-
+            //Console.write... test
             Console.WriteLine("-----------------------------");
             Console.WriteLine(slowTest.Speed);
             Console.WriteLine(elonMusksPrecious.Speed);
