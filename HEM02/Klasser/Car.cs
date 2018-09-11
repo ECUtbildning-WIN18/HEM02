@@ -13,11 +13,11 @@ namespace HEM02.Klasser
 
         public Person Owner;
 
-        public Sound Radio;
+        public SoundSystem Radio;
 
 
 
-        public Car(string brand, string model, Engine engine, Person owner, Sound radio)
+        public Car(string brand, string model, Engine engine, Person owner, SoundSystem radio)
         {
             Brand = brand;
             Model = model;
@@ -25,9 +25,13 @@ namespace HEM02.Klasser
             Owner = owner;
             Radio = radio;            
 
-            if (Engine.Battery)
+            if (radio.On && engine.Battery)
             {
-                radio.OnOff = true;
+                radio.RixFm();
+            }
+            else
+            {
+                radio.On = false;
             }
         }
     }

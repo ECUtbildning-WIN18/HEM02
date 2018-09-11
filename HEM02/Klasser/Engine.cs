@@ -12,15 +12,18 @@ namespace HEM02.Klasser
         public bool Battery;
         public int Speed = 0;
         public int Accelerate()
+
         {
             Speed = +10;
             return Speed;
         }
+
         public int Break()
         {
             Speed = -10;
             return Speed;
         }
+
         public int LudicrousSpeed()
         {
             Speed = 1000;

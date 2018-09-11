@@ -4,10 +4,16 @@ using System.Text;
 
 namespace HEM02.Klasser
 {
-    class Sound
+    class SoundSystem
     {
         public string Speakers;
         public string Reciever;
-        public bool OnOff;
+        public bool On;
+
+        public string RixFm()
+        {
+            string rixfm = "Bäst musik just nu!";
+            return rixfm;
+        }
     }
 }
