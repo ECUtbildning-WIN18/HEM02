@@ -17,9 +17,9 @@ namespace HEM02
             Model = model;
             RegNumber = regnumber;
         }
-        
-        public Engine Engine { get; } //här är jag lite osäker på vad jag egentligen gör...
-        public Owner Owner { get; } //se ovan kommentar
+        //härifrån är är jag lite osäker på vad jag egentligen gör...behöver få mer förklarat om Aggregat/Association
+        public Engine Engine { get; } 
+        public Owner Owner { get; } 
 
         public Car (string Brand, string Model, Engine engine, Owner owner)
         {

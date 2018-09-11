@@ -8,8 +8,9 @@ namespace HEM02
         {
             //skapar ny modell av Car med namn myCar
             Car myCar = new Car("AAA 111","Tesla", "Model3");
+            Owner carOwner = new Owner("Iwant", "Atesla");
             {
-            
+                
             }
 
         }

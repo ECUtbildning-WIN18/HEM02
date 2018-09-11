@@ -14,6 +14,7 @@ namespace HEM02
         { }
         public void IncreaseVolume()
         { }
+        
         public void DecreaseVolume()
         { }
     }
