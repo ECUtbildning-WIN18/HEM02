@@ -6,28 +6,28 @@ namespace HEM02.classer
 {
     class Engine
     {
-        public string Type { get; }
-        public string Output { get; }
-        public string SerialNumber { get; }
-        public bool Battery { get; }
-        public int Speed = 0;
+        public string type { get; }
+        public string outPut { get; }
+        public string serialNumber { get; }
+        public bool battery { get; }
+        private int speed = 0;
 
         public int Accelerate()
         {
-            Speed = +10;
-            return Speed;
+            speed = +10;
+            return speed;
         }
 
         public int Decelerate()
         {
-            Speed = -10;
-            return Speed;
+            speed = -10;
+            return speed;
         }
 
         public int LudicrousSpeed()
         {
-            Speed = int.MaxValue;
-            return Speed;
+            speed = int.MaxValue;
+            return speed;
         }
 
     }

@@ -21,13 +21,13 @@ namespace HEM02.classer
             Owner = owner;
             Radio = radio;
 
-            if (radio.On && engine.Battery)
+            if (radio.on && engine.battery)
             {
                 radio.rixFm();
             }
             else
             {
-                radio.On = false;
+                radio.on = false;
             }
         }
     }

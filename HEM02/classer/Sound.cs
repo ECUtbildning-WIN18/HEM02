@@ -6,7 +6,7 @@ namespace HEM02.classer
 {
     class SoundSystem
     {
-        public bool On;
+        public bool on;
 
         public string rixFm()
         {
