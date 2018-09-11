@@ -8,10 +8,10 @@ namespace HEM02.classer
     {
         public bool on;
 
-        public string rixFm()
+        public string RixFm()
         {
-            string rixfm = "Välkommen till Rix FM Här spelar vi värdelös musik";
-            return rixfm;
+            Console.WriteLine("Välkommen till Rix FM Här spelar vi värdelös musik");
+            return "Välkommen till Rix FM Här spelar vi värdelös musik";
         }
     }
 }

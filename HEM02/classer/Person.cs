@@ -6,13 +6,17 @@ namespace HEM02.classer
 {
     class Person
     {
-        public string firstName { get; }
-        public string lastName { get; }
+        public string FirstName { get; set; }
+        public string LastName { get; set; }
 
-        public Person(string _firstName, string _lastName)
+        public Person(string firstName, string lastName)
         {
-            firstName = _firstName;
-            lastName = _lastName;
+            FirstName = firstName;
+            LastName = lastName;
+        }
+
+        public Person()
+        {
         }
     }
 }
