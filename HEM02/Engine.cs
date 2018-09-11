@@ -7,13 +7,13 @@ namespace HEM02
     class Engine
     {
         public string Type { get; }
-        public int Utput { get; }
+        public int Output { get; }
         
 
-        public Engine(string type, int utput)
+        public Engine(string type, int output)
         {
             Type = type;
-            Utput = utput;
+            Output = output;
             
         }
 
