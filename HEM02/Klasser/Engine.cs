@@ -10,8 +10,21 @@ namespace HEM02.Klasser
         public int Output;
         public string SerialNumber;
         public bool Battery;
-        public int Accelerate;
-        public int Break;
-        public bool LudicrousSpeed;
+        public int Speed = 0;
+        public int Accelerate()
+        {
+            Speed = +10;
+            return Speed;
+        }
+        public int Break()
+        {
+            Speed = -10;
+            return Speed;
+        }
+        public int LudicrousSpeed()
+        {
+            Speed = 1000;
+            return Speed;
+        }
     }
 }
