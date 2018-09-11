@@ -1,5 +1,5 @@
 ﻿using System;
-using HEM02.Klasser;
+using HEM02.Classes;
 
 namespace HEM02
 {
@@ -7,7 +7,6 @@ namespace HEM02
     {
         static void Main(string[] args)
         {
-            Car Tesla = new Car();
 
         }
     }
