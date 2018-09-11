@@ -6,7 +6,11 @@ namespace HEM02
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Car Model3 = new Car("Tesla", "Model3")
+            {
+            
+            }
+
         }
     }
 }
