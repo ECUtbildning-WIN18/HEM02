@@ -4,10 +4,14 @@ using System.Text;
 
 namespace HEM02.classer
 {
-    class Sound
+    class SoundSystem
     {
-        public string Speakers { get; }
-        public string Reciever { get; }
-        public bool OnOff;
+        public bool On;
+
+        public string rixFm()
+        {
+            string rixfm = "Välkommen till Rix FM Här spelar vi värdelös musik";
+            return rixfm;
+        }
     }
 }

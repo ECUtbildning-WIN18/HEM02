@@ -17,14 +17,16 @@ namespace HEM02.classer
             Speed = +10;
             return Speed;
         }
+
         public int Decelerate()
         {
             Speed = -10;
             return Speed;
         }
+
         public int LudicrousSpeed()
         {
-            Speed = 1000;
+            Speed = int.MaxValue;
             return Speed;
         }
 

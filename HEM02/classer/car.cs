@@ -10,10 +10,10 @@ namespace HEM02.classer
         public string Model { get; }
         public Engine Engine { get; }
         public Person Owner { get; }
-        public Sound Radio { get; }
+        public SoundSystem Radio { get; }
 
 
-        public Car(string brand, string model, Engine engine, Person owner, Sound radio)
+        public Car(string brand, string model, Engine engine, Person owner, SoundSystem radio)
         {
             Brand = brand;
             Model = model;
@@ -21,13 +21,13 @@ namespace HEM02.classer
             Owner = owner;
             Radio = radio;
 
-            if (Engine.Battery)
+            if (radio.On && engine.Battery)
             {
-                radio.OnOff = true;
+                radio.rixFm();
             }
             else
             {
-                radio.OnOff = false;
+                radio.On = false;
             }
         }
     }
