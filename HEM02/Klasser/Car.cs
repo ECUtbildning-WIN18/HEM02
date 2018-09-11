@@ -16,13 +16,14 @@ namespace HEM02.Klasser
         public Sound Radio;
 
 
+
         public Car(string brand, string model, Engine engine, Person owner, Sound radio)
         {
             Brand = brand;
             Model = model;
             Engine = engine;
             Owner = owner;
-            Radio = radio;
+            Radio = radio;            
 
             if (Engine.Battery)
             {
