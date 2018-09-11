@@ -11,13 +11,15 @@ namespace HEM02.Model
 
         public Engine Engine { get; }
         public Person Owner { get; }
+        public SoundSystem SoundSystem { get; }
 
-        public Car(string _Brand, string _Model, Engine _engine, Person _Owner)
+        public Car(string _Brand, string _Model, Engine _engine, Person _Owner, SoundSystem _SoundSystem)
         {
             Brand = _Brand;
             Model = _Model;
             Engine = _engine;
             Owner = _Owner;
+            SoundSystem = _SoundSystem;
         }
     }
 
@@ -45,10 +47,16 @@ namespace HEM02.Model
 
     class SoundSystem
     {
-        string TurnOn;
-        string TurnOff;
-        string VolumeUpp;
-        string VolumeDown;
+        private string TurnOn; //Ej klar med denna klassen
+        private string TurnOff;
+        private string VolumeUpp;
+        private string VolumeDown;
+
+        public SoundSystem(string _TurnOn) // Ej klar!
+        {
+
+
+        }
 
     }
 
