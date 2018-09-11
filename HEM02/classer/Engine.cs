@@ -10,5 +10,23 @@ namespace HEM02.classer
         public string Output { get; }
         public string SerialNumber { get; }
         public bool Battery { get; }
+        public int Speed = 0;
+
+        public int Accelerate()
+        {
+            Speed = +10;
+            return Speed;
+        }
+        public int Decelerate()
+        {
+            Speed = -10;
+            return Speed;
+        }
+        public int LudicrousSpeed()
+        {
+            Speed = 1000;
+            return Speed;
+        }
+
     }
 }

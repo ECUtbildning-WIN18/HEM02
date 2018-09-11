@@ -8,12 +8,10 @@ namespace HEM02.classer
     {
         public string Brand { get; }
         public string Model { get; }
-
         public Engine Engine { get; }
-
         public Person Owner { get; }
-
         public Sound Radio { get; }
+
 
         public Car(string brand, string model, Engine engine, Person owner, Sound radio)
         {
@@ -26,6 +24,10 @@ namespace HEM02.classer
             if (Engine.Battery)
             {
                 radio.OnOff = true;
+            }
+            else
+            {
+                radio.OnOff = false;
             }
         }
     }
