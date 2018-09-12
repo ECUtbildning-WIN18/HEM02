@@ -2,11 +2,24 @@
 
 namespace HEM02
 {
-    class Program
+        class Program
     {
+
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+
+            
+
+
+            Owner Dawid = new Owner("Dawid", "Owizyc");
+            //Engine Model3Engine = new Engine()
+            
+            //Car Tesla = new Car();
+            
+
+            
+
+            Console.ReadLine();
         }
     }
 }
