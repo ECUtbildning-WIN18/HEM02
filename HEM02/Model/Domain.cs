@@ -23,7 +23,6 @@ namespace HEM02.Model
         }
     }
 
-
     class Engine
     {
         private string Type { get; }
