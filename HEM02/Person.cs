@@ -3,8 +3,8 @@ namespace HEM02
 {
     public class Person
     {
-        String FirstName        { get; }
-        String LastName         { get; }
+        string FirstName        { get; }
+        string LastName         { get; }
         DateTime DateOfBirth    { get; }
         bool ValidLicense       { get; }
 

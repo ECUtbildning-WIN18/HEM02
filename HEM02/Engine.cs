@@ -6,20 +6,23 @@ namespace HEM02
         string Model            { get; }
         int Serial              { get; }
         DateTime CreationDate   { get; }
+        bool LudicrousSpeed     { get; }
         bool EngineEnabled      { get; }
 
-        public Engine(string model, int serial, DateTime creationDate)
+        public Engine(string model, int serial, DateTime creationDate, bool ludicrousSpeed)
         {
             model = Model;
             serial = Serial;
             creationDate = CreationDate;
+            ludicrousSpeed = LudicrousSpeed;
         }
 
-        public Engine(string model, int serial, DateTime creationDate, bool engineEnabled)
+        public Engine(string model, int serial, DateTime creationDate, bool ludicrousSpeed, bool engineEnabled)
         {
             model = Model;
             serial = Serial;
             creationDate = CreationDate;
+            ludicrousSpeed = LudicrousSpeed;
             engineEnabled = EngineEnabled;
         }
     }

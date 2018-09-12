@@ -1,9 +1,9 @@
 ﻿using System;
 namespace HEM02
 {
-    public class cars
+    public class car
     {
-        public cars()
+        public car()
         {
         }
     }
