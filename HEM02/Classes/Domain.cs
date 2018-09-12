@@ -26,9 +26,9 @@ namespace HEM02.Classes
 
     class Engine
     {
-        private string Type { get; }
-        private int Output { get; }
-        private string SerialNumber { get; }
+        public string Type { get; }
+        public int Output { get; }
+        public string SerialNumber { get; }
 
         public Engine(string type, int output, string serialNumber)
         {
@@ -40,9 +40,9 @@ namespace HEM02.Classes
 
     class Person
     {
-        private string FirstName { get; }
-        private string LastName { get; }
-        private long PersonalID { get; }
+        public string FirstName { get; }
+        public string LastName { get; }
+        public long PersonalID { get; }
 
         public Person(string firstName, string lastName, long personalID)
         {
