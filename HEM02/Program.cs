@@ -1,4 +1,5 @@
 ﻿using System;
+using HEM02.Classes;
 
 namespace HEM02
 {
@@ -6,7 +7,7 @@ namespace HEM02
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+
         }
     }
 }
