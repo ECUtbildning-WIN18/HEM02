@@ -23,9 +23,8 @@ namespace HEM02
             Owner = owner;
             AudioSystem = audioSystem;
             Speed = 0;
-
-
         }
+
         public void IncreaseSpeed()
         {
             Speed = Speed + 10;

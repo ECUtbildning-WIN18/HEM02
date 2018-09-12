@@ -9,7 +9,6 @@ namespace HEM02
         public string Type { get; }
         public int Output { get; }
         
-
         public Engine(string type, int output)
         {
             Type = type;

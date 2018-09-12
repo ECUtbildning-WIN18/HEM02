@@ -12,11 +12,9 @@ namespace HEM02
 
         public AudioSystem(string soundSystem)
         {
-            SoundSystem = soundSystem;
-            
+            SoundSystem = soundSystem;  
         }
-
-
+        
         public void TurnOnMusic()
         {
             Console.WriteLine("You are rocking");

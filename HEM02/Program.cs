@@ -6,7 +6,6 @@ namespace HEM02
     {
         static void Main(string[] args)
         {
-            
             AudioSystem hifi = new AudioSystem("Hifi System");
             AudioSystem badSound = new AudioSystem("Bad SoundSystem");
             
@@ -18,8 +17,7 @@ namespace HEM02
 
             Car elonMusksPrecious = new Car(turbo, theOwner, hifi);
             Car slowTest = new Car(slow, theThief, badSound);
-            
-            
+           
             //Audio test
             hifi.TurnOnMusic();
             hifi.TurnOffMusic();
@@ -31,15 +29,12 @@ namespace HEM02
             slowTest.IncreaseSpeed();
             elonMusksPrecious.LudicrousSpeed();
             slowTest.LudicrousSpeed();
-            
             //Console.write... test
             Console.WriteLine("-----------------------------");
             Console.WriteLine(slowTest.Speed);
             Console.WriteLine(elonMusksPrecious.Speed);
             Console.WriteLine(elonMusksPrecious.Model);
             Console.WriteLine(slowTest.Brand);
-            
-            
             Console.WriteLine(elonMusksPrecious.Owner.Fullname);
             Console.ReadKey();
 
