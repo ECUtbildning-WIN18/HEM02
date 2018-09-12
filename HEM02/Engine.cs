@@ -6,16 +6,27 @@ namespace HEM02
 {
     class Engine
     {
-        string randomSerial;
+        public string name = "Fet motor";
 
-        public int HorsePower { get; set; } = 300;
-        public string SerialNumber { get; set; } = "Unknown serial";
+        public void StartEngine()  {Console.WriteLine("Engine started"); } //Start the engine
 
-        public void SuperSpeed()
+
+        public void StopEngine() { Console.WriteLine("Engine turned off"); } //Turn the engine off
+
+
+        public int HorsePower { get; set; } = 300; //Horsepower, default 300
+
+
+        public void SuperSpeed()  //SuperSpeed = adds 3000 to horsepower
         {
             for (int i = 0; i < 3000; i++)
             {
               HorsePower++;
+
+                if (HorsePower >= 3300)
+                {
+                    Console.WriteLine("Super speed activated!");
+                }
             }
            
         }

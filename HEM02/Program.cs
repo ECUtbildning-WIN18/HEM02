@@ -5,15 +5,24 @@ namespace HEM02
     {
         static void Main(string[] args)
         {
-            Sound _sound = new Sound();
-            Engine _engine = new Engine();
+            Sound sound = new Sound();
+            Engine engine = new Engine();
+            Car car = new Car(engine, "Åke Larsson");
 
-            _sound.StartMusic();
-            _sound.StopMusic();
+            sound.StartMusic(); 
+            sound.StopMusic();
 
-            Console.WriteLine($"Current engine stats: " + _engine.SerialNumber + " with " + _engine.HorsePower+" hk");
-            _engine.SuperSpeed();
-            Console.WriteLine(_engine.HorsePower);
+            engine.SuperSpeed(); // Adds 3000 horsepower
+
+            car.UpgradeCar(); // changes brand to volvo instead of fiat
+            car.GetBrand(); // retrieves the value of brand
+
+            Console.WriteLine(car.serialNumber); 
+            
+            Console.WriteLine(engine.HorsePower);
+
+            Console.ReadLine();
+            
         }
 
       
