@@ -46,14 +46,15 @@ namespace HEM02.Model
 
     class SoundSystem
     {
-        private string TurnOn; //Ej klar med denna klassen
-        private string TurnOff;
+        private bool TurnOn { get; }//Ej klar med denna klassen
+        private bool TurnOff { get; }
         private string VolumeUpp;
         private string VolumeDown;
 
-        public SoundSystem(string _TurnOn) // Ej klar!
+        public SoundSystem(bool _TurnOn, bool _TurnOff) // Ej klar!
         {
-
+            TurnOff = _TurnOff;
+            TurnOn = _TurnOn;
 
         }
 
