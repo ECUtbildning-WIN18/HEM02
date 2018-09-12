@@ -28,6 +28,13 @@ namespace HEM02.Model
         private string Type { get; }
         private int Output { get; }
         private string SerialNumber { get; }
+
+        public Engine(string _Type, int _Output, string _SerialNumber)
+        {
+            Type = _Type;
+            Output = _Output;
+            SerialNumber = _SerialNumber;
+        }
     }
 
     class Person
