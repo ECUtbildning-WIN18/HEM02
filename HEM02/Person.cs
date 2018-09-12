@@ -3,24 +3,24 @@ namespace HEM02
 {
     public class Person
     {
-        string FirstName        { get; }
-        string LastName         { get; }
-        DateTime DateOfBirth    { get; }
-        bool ValidLicense       { get; }
+        public string FirstName        { get; }
+        public string LastName         { get; }
+        public DateTime DateOfBirth    { get; }
+        public bool ValidLicense       { get; }
 
         public Person(string firstName, string lastName, DateTime dateOfBirth)
         {
-            firstName = FirstName;
-            lastName = LastName;
-            dateOfBirth = DateOfBirth;
+            FirstName = firstName;
+            LastName = lastName;
+            DateOfBirth = dateOfBirth;
         }
 
         public Person(string firstName, string lastName, DateTime dateOfBirth, bool validLicense)
         {
-            firstName = FirstName;
-            lastName = LastName;
-            dateOfBirth = DateOfBirth;
-            validLicense = ValidLicense;
+            FirstName = firstName;
+            LastName = lastName;
+            DateOfBirth = dateOfBirth;
+            ValidLicense = validLicense;
         }
     }
 }
