@@ -6,7 +6,7 @@ namespace HEM02
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Cars car = new Cars();
         }
     }
 }
