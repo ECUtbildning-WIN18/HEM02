@@ -6,25 +6,22 @@ namespace HEM02.Classes
 {
     class Car
     {
-        private string Brand { get; }
-        private string Model { get; }
+        public string Brand { get; }
+        public string Model { get; }
 
         public Engine Engine { get; }
         public Person Owner { get; }
         public SoundSystem SoundSystem { get; }
 
-        public Car(string _Brand, string _Model, Engine _engine, Person _Owner, SoundSystem _SoundSystem)
+        public Car(string brand, string model, Engine engine, Person owner, SoundSystem soundSystem)
         {
-            Brand = _Brand;
-            Model = _Model;
-            Engine = _engine;
-            Owner = _Owner;
-            SoundSystem = _SoundSystem;
+            Brand = brand;
+            Model = model;
+            Engine = engine;
+            Owner = owner;
+            SoundSystem = soundSystem;
         }
 
-        public Car()
-        {
-        }
     }
 
     class Engine
@@ -33,11 +30,11 @@ namespace HEM02.Classes
         private int Output { get; }
         private string SerialNumber { get; }
 
-        public Engine(string _Type, int _Output, string _SerialNumber)
+        public Engine(string type, int output, string serialNumber)
         {
-            Type = _Type;
-            Output = _Output;
-            SerialNumber = _SerialNumber;
+            Type = type;
+            Output = output;
+            SerialNumber = serialNumber;
         }
     }
 
@@ -45,13 +42,13 @@ namespace HEM02.Classes
     {
         private string FirstName { get; }
         private string LastName { get; }
-        private int PersonalID { get; }
+        private long PersonalID { get; }
 
-        public Person(string _FirstName, string _LastName, int _PersonalID)
+        public Person(string firstName, string lastName, long personalID)
         {
-            _FirstName = FirstName;
-            _LastName = LastName;
-            _PersonalID = PersonalID;
+            firstName = FirstName;
+            lastName = LastName;
+            personalID = PersonalID;
         }
     }
 
@@ -62,10 +59,10 @@ namespace HEM02.Classes
         private string VolumeUpp;
         private string VolumeDown;
 
-        public SoundSystem(bool _TurnOn, bool _TurnOff) // Ej klar!
+        public SoundSystem(bool turnOn, bool turnOff) // Ej klar!
         {
-            TurnOff = _TurnOff;
-            TurnOn = _TurnOn;
+            TurnOff = turnOff;
+            TurnOn = turnOn;
 
         }
 
