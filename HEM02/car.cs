@@ -27,10 +27,7 @@ namespace HEM02
 
         }
 
-        public void Acceleration()
-        {
-
-        }
+        
 
 
 

@@ -8,18 +8,23 @@ namespace HEM02
     {
         
         public int SpeakersPower { get; } // 10 - 100 %
+
         
-        public SoundSys(int SpeakersPower)
+
+        public void on()
+        {
+            Console.WriteLine("Radio on");
+            Console.ReadKey();
+        }
+
+        public void off()
         {
 
         }
 
         
 
-        public void onoff()
-        {
-
-        }
+        
     }
     
 
