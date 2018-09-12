@@ -6,16 +6,19 @@ namespace HEM02
 {
     class Engine
     {
-        public string name = "Fet motor";
+        public string Name { get; } = "Fet motor";
 
-        public void StartEngine()  {Console.WriteLine("Engine started"); } //Start the engine
+        public void StartEngine()
+        {
+            Console.WriteLine("Engine started");
+        } 
 
+        public void StopEngine()
+        {
+            Console.WriteLine("Engine turned off");
+        } 
 
-        public void StopEngine() { Console.WriteLine("Engine turned off"); } //Turn the engine off
-
-
-        public int HorsePower { get; set; } = 300; //Horsepower, default 300
-
+        public int HorsePower { get; set; } = 300; 
 
         public void SuperSpeed()  //SuperSpeed = adds 3000 to horsepower
         {
@@ -28,11 +31,6 @@ namespace HEM02
                     Console.WriteLine("Super speed activated!");
                 }
             }
-           
         }
-        
-
-
-
     }
 }

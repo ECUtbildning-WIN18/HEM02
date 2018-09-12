@@ -5,36 +5,26 @@ namespace HEM02
     {
         static void Main(string[] args)
         {
-            Sound sound = new Sound();
+            SoundSystem sound = new SoundSystem();
             Engine engine = new Engine();
-            Car car = new Car(engine, "Åke Larsson");
+            Person owner = new Person("Åke","Larsson");
+            Car car = new Car(engine, owner);
 
-            sound.StartMusic(); 
+            Console.WriteLine(owner.FirstName);
+
+            sound.StartMusic();
             sound.StopMusic();
 
-            engine.SuperSpeed(); // Adds 3000 horsepower
+            Console.WriteLine(car.serialNumber);
+            Console.WriteLine(car.GetBrand());
+            car.UpgradeCar(); 
+            car.GetBrand(); 
+            Console.WriteLine(car.GetBrand());
 
-            car.UpgradeCar(); // changes brand to volvo instead of fiat
-            car.GetBrand(); // retrieves the value of brand
-
-            Console.WriteLine(car.serialNumber); 
-            
+            Console.WriteLine(engine.Name);
             Console.WriteLine(engine.HorsePower);
-
-            Console.ReadLine();
-            
+            engine.SuperSpeed(); 
+            Console.WriteLine(engine.HorsePower);
         }
-
-      
    }
-   
-        
-        
-
-        /*public Customer(string FirstName, string LastName, int SocialSecurityNumber)
-        Robert Kund = new Robert("John", "Doe", 8409424923);*/
-
-    
-
-
 }
