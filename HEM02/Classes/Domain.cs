@@ -9,9 +9,9 @@ namespace HEM02.Classes
         public string Brand { get; }
         public string Model { get; }
 
-        public Engine Engine { get; }
-        public Person Owner { get; }
-        public SoundSystem SoundSystem { get; }
+        private Engine Engine { get; }
+        private Person Owner { get; }
+        private SoundSystem SoundSystem { get; }
 
         public Car(string brand, string model, Engine engine, Person owner, SoundSystem soundSystem)
         {
@@ -54,8 +54,8 @@ namespace HEM02.Classes
 
     class SoundSystem
     {
-        private bool TurnOn { get; }//Ej klar med denna klassen
-        private bool TurnOff { get; }
+        public bool TurnOn { get; }//Ej klar med denna klassen
+        public bool TurnOff { get; }
         private string VolumeUpp;
         private string VolumeDown;
 
@@ -63,7 +63,6 @@ namespace HEM02.Classes
         {
             TurnOff = turnOff;
             TurnOn = turnOn;
-
         }
 
     }
