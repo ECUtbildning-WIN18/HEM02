@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace HEM02.Model
+namespace HEM02.Classes
 {
     class Car
     {
@@ -20,6 +20,10 @@ namespace HEM02.Model
             Engine = _engine;
             Owner = _Owner;
             SoundSystem = _SoundSystem;
+        }
+
+        public Car()
+        {
         }
     }
 
