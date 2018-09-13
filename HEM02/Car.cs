@@ -10,7 +10,7 @@ namespace HEM02
 
         private string Color { get; set; }
 
-        public int serialNumber { get; }
+        public int SerialNumber { get; }
 
         public Person Owner { get; } 
 
@@ -24,7 +24,7 @@ namespace HEM02
             Owner = owner;  
           
             Random random = new Random();
-            serialNumber = random.Next(1, 2147483640);   // All new objects "Car" will get a random serial
+            SerialNumber = random.Next(1, 2147483640);   // All new objects "Car" will get a random serial
         }
 
         public void UpgradeCar() 
