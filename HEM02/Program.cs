@@ -15,7 +15,7 @@ namespace HEM02
             sound.StartMusic();
             sound.StopMusic();
 
-            Console.WriteLine(car.serialNumber);
+            Console.WriteLine(car.SerialNumber);
             Console.WriteLine(car.GetBrand());
             car.UpgradeCar(); 
             car.GetBrand(); 
