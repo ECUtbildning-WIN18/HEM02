@@ -3,12 +3,12 @@ namespace HEM02
 {
     public class SoundSystem
     {
-        public float Volume    { get; }
-        public float Bass      { get; }
-        public float Treble    { get; }
+        public double Volume    { get; }
+        public double Bass      { get; }
+        public double Treble    { get; }
         public bool Power      { get; }
 
-        public SoundSystem(float volume, float bass, float treble, bool power)
+        public SoundSystem(double volume, double bass, double treble, bool power)
         {
             Volume = volume;
             Bass = bass;

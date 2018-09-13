@@ -1,7 +1,7 @@
 ﻿using System;
 namespace HEM02
 {
-    public class car
+    public class Car
     {
         public string Name         { get; }
 
@@ -9,7 +9,7 @@ namespace HEM02
         public Person Owner        { get; }
         public SoundSystem Stereo  { get; }
 
-        public car(string name, Engine engine, Person owner, SoundSystem stereo)
+        public Car(string name, Engine engine, Person owner, SoundSystem stereo)
         {
             Name = name;
             Engine = engine;
