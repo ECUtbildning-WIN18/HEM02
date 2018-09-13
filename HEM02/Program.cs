@@ -15,7 +15,7 @@ namespace HEM02
             sound.StartMusic();
             sound.StopMusic();
 
-            Console.WriteLine(car.SerialNumber);
+            Console.WriteLine($"{owner.FirstName} {owner.LastName}s car has the serial {car.SerialNumber}");
             Console.WriteLine(car.GetBrand());
             car.UpgradeCar(); 
             car.GetBrand(); 
