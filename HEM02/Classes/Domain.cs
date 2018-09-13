@@ -13,13 +13,13 @@ namespace HEM02.Classes
         private Person Owner { get; }
         private SoundSystem SoundSystem { get; }
 
-        public Car(string brand, string model, Engine engine, Person owner, SoundSystem soundSystem)
+        public Car(string brand, string model) // Engine engine, Person owner, SoundSystem soundSystem
         {
             Brand = brand;
             Model = model;
-            Engine = engine;
-            Owner = owner;
-            SoundSystem = soundSystem;
+            //Engine = engine;
+            //Owner = owner;
+            //SoundSystem = soundSystem;
         }
 
     }

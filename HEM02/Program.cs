@@ -8,7 +8,7 @@ namespace HEM02
         static void Main(string[] args)
         {
 
-            Car DarkPhoenix = new Car("Tesla", "DarkPhoenix", Engine, Person, SoundSystem);
+            Car DarkPhoenix = new Car("Tesla", "Model 3");
 
             Person JeanGrey = new Person("Jean", "Grey", 198001018745);
             Engine monster = new Engine("Telepathic engine", 300, "666 - 666 - 666");
