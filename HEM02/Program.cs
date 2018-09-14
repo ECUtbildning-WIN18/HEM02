@@ -14,7 +14,14 @@ namespace HEM02
 
             myCar.PrintCarData();
             Console.ReadKey();
-            /*
+
+            myCar.Soundsystem.TurnOnSoundSystem();
+            myCar.Soundsystem.TurnOnMusic();
+            myCar.Soundsystem.TurnOffMusic();
+            myCar.Soundsystem.TurnOffSoundSystem();
+            Console.ReadKey();
+
+            
             Console.WriteLine(myCar.ChangeSpeed(100, false));
             myCar.PrintCarData();
             Console.ReadKey();
@@ -31,7 +38,7 @@ namespace HEM02
 
             Console.WriteLine(myCar.ChangeSpeed(1000, false));
             Console.ReadKey();
-            */
+            
             //Console.ReadLine();
 
             

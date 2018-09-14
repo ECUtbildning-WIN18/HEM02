@@ -10,6 +10,8 @@ namespace HEM02
         public int Output { get; }
         public string SerialNumber { get; }
 
+        private bool isRunning;
+
         public Engine(string type, int output, string serialNumber)
         {
             Type = type;
@@ -17,6 +19,48 @@ namespace HEM02
             SerialNumber = serialNumber;
         }
 
+        public int RevolutionsPerMinute { get; set; }
+
+        public void IncreaseOutput()
+        {
+            if (isRunning)
+                RevolutionsPerMinute += 10;
+        }
+        
+        public void DecreaseOutput()
+        {
+            if (isRunning)
+                RevolutionsPerMinute -= 10;
+        }
+
+        public void IncreaseOutput(bool isLudicrous)
+        {
+            if (isLudicrous)
+            {
+                RevolutionsPerMinute = 100000;
+            }
+        }
+
+        public void DecreaseOutput(bool isLudicrous)
+        {
+            if (isLudicrous)
+            {
+                RevolutionsPerMinute = 0;
+            }
+        }
+    
+
+        public void StartEngine()
+        {
+            isRunning = true;
+        }
+
+        public void StopRunning()
+        {
+            isRunning = false;
+        }
+
+    
         public void GetEngineData()
         {
             Console.WriteLine();

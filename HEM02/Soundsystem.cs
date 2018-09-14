@@ -6,25 +6,38 @@ namespace HEM02
 {
     class Soundsystem
     {
-        private bool isOn = false;
+        public bool IsOn { get; set; } = false;
+        public bool IsPlaying { get; set; } = false;
 
-        public bool IsOn { get => isOn; set => isOn = value; }
+        public void TurnOnSoundSystem()
+        {
+            IsOn = true;
+            Console.WriteLine("Soundsystem is ON!");
+        
+        }
+
+        public void TurnOffSoundSystem()
+        {
+            IsOn = false;
+            Console.WriteLine("Soundsystem is OFF!");
+        }
 
         public void TurnOnMusic()
         {
-            IsOn = true;
+            IsPlaying = true;
+            Console.WriteLine("Music is ON!");
         }
 
         public void TurnOffMusic()
         {
-            IsOn = false;
+            IsPlaying = false;
+            Console.WriteLine("Music is OFF!");
         }
-
+        
         public string SoundSystemStatus()
         {
-            if (IsOn) { return "Music is ON!"; }
-            else return "Music is OFF!";
-        }
+            return IsPlaying ? "Music is ON!" : "Music is OFF!";
 
+        }
     }
 }

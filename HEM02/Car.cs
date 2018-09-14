@@ -9,15 +9,20 @@ namespace HEM02
         public string Brand { get; }
         public string Model { get; }
         public Engine Engine { get; }
-        public int Speed { get => speed; set => speed = value; }
+        public int Speed { get; set; } = 0;
         public Soundsystem Soundsystem;
 
         public Person Owner { get; }
-        private int speed = 0;
+        
         private bool isLudicrousSpeed = false;
 
-        //Constructor
-        public Car(string brand, string model, Engine engine, Person owner, Soundsystem soundSystem)
+
+        public Car(
+            string brand, 
+            string model, 
+            Engine engine, 
+            Person owner, 
+            Soundsystem soundSystem)
         {            
             Brand = brand;
             Model = model;
@@ -40,21 +45,20 @@ namespace HEM02
             Console.WriteLine("Owner: " + Owner.FirstName + " " + Owner.LastName);
 
             Console.WriteLine("Sound system: " + Soundsystem.SoundSystemStatus() );
-
-
+            Console.WriteLine();
         }
 
 
         public int ChangeSpeed(int speedChange, bool ludicrousSpeed)
         {
-            if (isLudicrousSpeed == true && ludicrousSpeed == false)
+            if (isLudicrousSpeed == true && !ludicrousSpeed)
             {
                 isLudicrousSpeed = ludicrousSpeed;
                 return Speed;
             } else if (Speed > 0 && Speed + speedChange < 0 && !ludicrousSpeed) 
             {
                 return Speed = 0;
-            } else if(ludicrousSpeed == true)
+            } else if(ludicrousSpeed)
             {
                 isLudicrousSpeed = ludicrousSpeed;
                 Speed = int.MaxValue;
