@@ -1,4 +1,5 @@
-﻿using System;
+﻿using HEM02.Classes;
+using System;
 
 namespace HEM02
 {
@@ -6,7 +7,12 @@ namespace HEM02
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+
+            Person JeanGrey = new Person("Jean", "Grey", 198001018745);
+            Engine monster = new Engine("Telepathic engine", 300, "666 - 666 - 666");
+            Car DarkPhoenix = new Car("Tesla", "Model 3", monster, JeanGrey, null);
+
+            Console.WriteLine();
         }
     }
 }
