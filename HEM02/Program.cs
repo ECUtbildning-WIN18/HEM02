@@ -12,7 +12,7 @@ namespace HEM02
             Engine monster = new Engine("Telepathic engine", 300, "666 - 666 - 666");
             Car DarkPhoenix = new Car("Tesla", "Model 3", monster, JeanGrey, null);
 
-            Console.WriteLine(DarkPhoenix);
+            Console.WriteLine();
         }
     }
 }
